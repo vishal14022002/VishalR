@@ -1,0 +1,8 @@
+.animate-box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.animate-box img{
+  	margin: 0;
+    height: 150px;
+}
