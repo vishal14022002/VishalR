@@ -40,18 +40,18 @@ header
 {
 	color: #de0611;
 }
+body
+{
+	background: #111;
+	padding-bottom: 300px;
+	overflow-x: hidden;
+}
 .dfe
 {
 	padding: 10px;
 	border: 5px solid gray;
 	margin: 20px;
 	color: #2E8B57;
-}
-body
-{
-	background: #111;
-	padding-bottom: 300px;
-	overflow-x: hidden;
 }
 body:before
 {
