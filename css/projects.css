@@ -9,3 +9,30 @@
 .dfe{
 	color: #2E8B57;
 }
+/* Responsive Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional for rounded corners */
+    transition: transform 0.2s ease-in-out; /* Optional for hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Optional for hover effect */
+}
+
+/* Responsive Image Gallery with Images Fitting Inside */
+.gallery img {
+    width: 100%; /* Full width of the container */
+    height: 200px; /* Fixed height; adjust as needed */
+    object-fit: contain; /* Make sure the entire image fits within the box */
+    border-radius: 8px; /* Optional for rounded corners */
+    background-color: #f8f8f8; /* Optional: Background color for empty spaces */
+}
