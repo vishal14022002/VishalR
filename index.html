@@ -37,28 +37,32 @@
 		</div>
 	</header>
 	<div class="banner">
-		<img src="images/vishal8.png" class="bg">
-		<div class="content">
-			<img src="images/vishalfin6.png" class="movieTitle">
-			<h4>
-				<span>2021</span>
-				<span>0+</span>
-				<span><8mins</span>
-				<span>Adventure</span>
-			</h4>
-			<p>My name is Vishal Radhakrishnan. I am currently on a design expedition as a Mechanical Engineering student at the University of Toronto. For this journey of innovation, to provide me with extra assistance, I am filling my bag-pack with the skills of Machine Learning, Robotics, and Engineering Business.</p>
-			<div class="playbutton">
-				<a href="projects.html"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
-				<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+     <div class="bg-slideshow">
+        <img src="images/vishal8.png" class="bg active">
+        <img src="images/tcenergy.jpg" class="bg">>
+        <!-- Add as many images as you like -->
+    </div>
+			<div class="content">
+				<img src="images/vishalfin6.png" class="movieTitle">
+				<h4>
+					<span>2021</span>
+					<span>0+</span>
+					<span><8mins</span>
+					<span>Adventure</span>
+				</h4>
+				<p>My name is Vishal Radhakrishnan. I am currently on a design expedition as a Mechanical Engineering student at the University of Toronto. For this journey of innovation, to provide me with extra assistance, I am filling my bag-pack with the skills of Machine Learning, Robotics, and Engineering Business.</p>
+				<div class="playbutton">
+					<a href="projects.html"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
+					<a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+				</div>
 			</div>
-		</div>
-		<a class="playtrailer" onclick="toggleVideo();"><img src="images/play.png">Watch Trailer</a>
+			<a class="playtrailer" onclick="toggleVideo();"><img src="images/play.png">Watch Trailer</a>
 
-		<ul class="sci">
-			<li><a href="https://www.facebook.com/vishal.radhakrishnan.96/" target="_blank"><img src="images/facebook.png"></a></li>
-			<li><a href="https://www.linkedin.com/in/vishal-radhakrishnan-39bb0a1b1/" target="_blank"><img src="images/linkedin.png"></a></li>
-			<li><a href="https://www.instagram.com/vishal.1402/" target="_blank"><img src="images/instagram.png"></a></li>
-		</ul>
+			<ul class="sci">
+				<li><a href="https://www.facebook.com/vishal.radhakrishnan.96/" target="_blank"><img src="images/facebook.png"></a></li>
+				<li><a href="https://www.linkedin.com/in/vishal-radhakrishnan-39bb0a1b1/" target="_blank"><img src="images/linkedin.png"></a></li>
+				<li><a href="https://www.instagram.com/vishal.1402/" target="_blank"><img src="images/instagram.png"></a></li>
+			</ul>
 	</div>
 
 	<div class="trailer">
@@ -86,7 +90,25 @@
       }
     </script>
 
+		<script>
+		function showSlides() {
+		    let slideIndex = 0;
+		    const slides = document.querySelectorAll('.bg-slideshow .bg');
+		    
+		    setInterval(() => {
+		        for (let i = 0; i < slides.length; i++) {
+		            slides[i].style.display = 'none';
+		        }
+		        slideIndex++;
+		        if (slideIndex > slides.length) { slideIndex = 1; }
+		        slides[slideIndex - 1].style.display = 'block';
+		    }, 4000); // Change every 4 seconds
+		}
 
+		// Wait for the DOM to be loaded before initializing the slideshow
+		document.addEventListener('DOMContentLoaded', showSlides);
+		</script>
 </body>
 
 </html>
+
