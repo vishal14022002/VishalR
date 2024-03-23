@@ -1,0 +1,14 @@
+* You can also ensure elements like headers, paragraphs, and others follow the theme */
+h1, h2, h3, h4, p {
+    color: #fff; /* Ensures these elements use white text */
+}
+/* Targets the main navigation menu */
+#fh5co-main-menu,
+#fh5co-main-menu ul li a {
+    color: #fff !important; /* Ensures the text color is white */
+}
+
+/* To ensure the active link in the navigation is also white */
+#fh5co-main-menu ul li.fh5co-active a {
+    color: #fff !important;
+}

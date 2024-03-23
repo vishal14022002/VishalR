@@ -36,3 +36,70 @@
     border-radius: 8px; /* Optional for rounded corners */
     background-color: #f8f8f8; /* Optional: Background color for empty spaces */
 }
+.gallery {
+  position: relative;
+  max-width: 100%; /* Ensure gallery takes full width to accommodate 4 images */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto; /* Each image takes 25% of the container's width */
+  max-width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+body, html {
+    background-color: #000; /* Makes the background black */
+    color: #fff; /* Makes the text color white */
+}
+
+a {
+    color: #fff; /* Ensures links are also white */
+}
+
+.className {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* You can also ensure elements like headers, paragraphs, and others follow the theme */
+h1, h2, h3, h4, p {
+    color: #fff; /* Ensures these elements use white text */
+}
+/* Targets the main navigation menu */
+#fh5co-main-menu,
+#fh5co-main-menu ul li a {
+    color: #fff !important; /* Ensures the text color is white */
+}
+
+/* To ensure the active link in the navigation is also white */
+#fh5co-main-menu ul li.fh5co-active a {
+    color: #fff !important;
+}

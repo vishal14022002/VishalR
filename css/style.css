@@ -1215,4 +1215,13 @@ body.offcanvas .fh5co-nav-toggle {
 .bg-slideshow img.active {
     opacity: 1;
 }
+/* Set the background of the entire page to black and text color to white */
+body, html {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
 
+/* Ensure all text in anchor tags (links) is white */
+a {
+    color: #fff;
+}
