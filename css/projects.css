@@ -75,9 +75,10 @@
   right: 0;
 }
 
-body, html {
-    background-color: #000; /* Makes the background black */
-    color: #fff; /* Makes the text color white */
+body{
+    background-color: #141414;
+  	color: #fff;
+  	font-family: 'Helvetica', Arial, sans-serif;
 }
 
 a {
@@ -102,4 +103,76 @@ h1, h2, h3, h4, p {
 /* To ensure the active link in the navigation is also white */
 #fh5co-main-menu ul li.fh5co-active a {
     color: #fff !important;
+}
+.project-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  margin: 20px;
+  width: 300px; /* Adjust based on preference */
+  background-color: #181818;
+  border: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-info h5, .project-info p {
+  margin: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  border-color: #E50914;
+}
+
+
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  width: 200px; /* Adjust to fit your layout */
+  height: 300px; /* Adjust to fit your layout */
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover {
+  z-index: 2;
+  transform: scale(1.1); /* Scale up the entire project item */
+}
+
+.project-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent background */
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.project-item:hover .project-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-title, .project-info {
+  margin: 0; /* Remove default margins */
 }
