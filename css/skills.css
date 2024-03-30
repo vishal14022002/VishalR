@@ -12,3 +12,13 @@ h1, h2, h3, h4, p {
 #fh5co-main-menu ul li.fh5co-active a {
     color: #fff !important;
 }
+
+body{
+    background-color: #141414;
+  	color: #fff;
+  	font-family: 'Helvetica', Arial, sans-serif;
+}
+
+a {
+    color: #fff; /* Ensures links are also white */
+}
