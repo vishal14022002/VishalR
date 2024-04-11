@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lung Phantom</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- i will provide this in description  -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/select2.min.css" />
+  <link rel="stylesheet" href="css/select2-bootstrap4.min.css" />
+
+  <link rel="stylesheet" href="css/slick-animation.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- scroll style -->
+  <link rel="stylesheet" href="css/scroll.css" />
+</head>
+
+<body>
+  <!--- for scroll bar ----->
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+
+  <header id="main-header">
+    <div class="main-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+              <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon" data-toggle="collapse">
+                  <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                  <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                  <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                </div>
+              </a>
+              <a href="index.html" class="navbar-brand">
+                <img src="images/logo1.png" class="img-fluid logo" alt="" />
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="menu-main-menu-container">
+                  <ul id="top-menu" class="navbar-nav ml-auto">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Projects</a></li>
+                    <li class="menu-item"><a href="#">Work</a></li>
+                    <li class="menu-item"><a href="#">Hall of Fame</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mobile-more-menu">
+                <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton" data-toggle="more-toggle"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-ellipsis-h"></i>
+                </a>
+                <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="navbar-right position-relative">
+                    <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                      <li>
+                        <a href="#" class="search-toggle">
+                          <i class="fa fa-search"></i>
+                        </a>
+                        <div class="search-box iq-search-bar">
+                          <form action="#" class="searchbox">
+                            <div class="form-group position-relative">
+                              <input type="text" class="text search-input font-size-12"
+                                placeholder="type here to search..." />
+                              <i class="search-link fa fa-search"></i>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                      <li class="nav-item nav-icon">
+                        <a href="#" class="search-toggle position-relative">
+                          <i class="fa fa-bell"></i>
+                          <span class="bg-danger dots"></span>
+                        </a>
+                        <div class="iq-sub-dropdown">
+                          <div class="iq-card shadow-none m-0">
+                            <div class="iq-card-body">
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-1.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">Computational Fluid Dynamics</h6>
+                                    <small class="font-size-12">just now</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-2.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">V-beam Microactuator</h6>
+                                    <small class="font-size-12">25 mins ago</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-3.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">Radiotherapy Lung Phantom</h6>
+                                    <small class="font-size-12">1h 30 mins ago</small>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                          <img src="images/user/user.png" class="img-fluid user-m rounded-circle" alt="" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="navbar-right menu-right">
+                <ul class="d-flex align-items-center list-inline m-0">
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="search-toggle device-search">
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <div class="search-box iq-search-bar d-search">
+                      <form action="#" class="searchbox">
+                        <div class="form-group position-relative">
+                          <input type="text" class="text search-input font-size-12"
+                            placeholder="type here to search..." />
+                          <i class="search-link fa fa-search"></i>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="search-toggle" data-toggle="search-toggle">
+                      <i class="fa fa-bell"></i>
+                      <span class="bg-danger dots"></span>
+                    </a>
+                    <div class="iq-sub-dropdown">
+                      <div class="iq-card shadow-none m-0">
+                        <div class="iq-card-body">
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-1.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">Computational Fluid Dynamics</h6>
+                                <small class="font-size-12">just now</small>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-2.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">
+                                  V-beam Microactuator
+                                </h6>
+                                <small class="font-size-12">25 mins ago</small>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-3.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">Radiotherapy Lung Phantom</h6>
+                                <small class="font-size-12">1h 30 mins ago</small>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center p-0">
+                      <img src="images/user/user.png" class="img-fluid user-m rounded-circle" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="nav-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- main content starts  -->
+  <div class="main-content">
+    <!-- trending section  -->
+    <section id="iq-trending" class="s-margin">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Projects</h4>
+            </div>
+            <div class="trending-contens">
+              <ul id="trending-slider-nav" class="list-inline p-0 mb-0 row align-items-center">
+                <li>
+                  <a href="javascript:void(0);">
+                    <div class="movie-slick position-relative">
+                      <img src="images/projectImages/projects/lungPhantom/collage_new.jpg" class="img-fluid" alt="">
+                    </div>
+                  </a>
+                </li>
+
+              </ul>
+              <ul id="trending-slider" class="list-inline p-0 m-0 d-flex align-items-center">
+                <li>
+                  <div class="tranding-block position-relative" style="background-image: url(images/projectImages/projects/lungPhantom/collage_new.jpg);">
+                    <div class="trending-custom-tab">
+                      <div class="tab-title-info position-relative">
+                        <ul class="trending-pills d-flex nav nav-pills justify-content-center align-items-center text-center" role="tablist">
+                          <li class="nav-item">
+                            <a href="#trending-data9" class="nav-link active show" data-toggle="pill" role="tab" aria-selected="true">
+                              Overview
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#trending-data10" class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                              Episodes
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#trending-data11" class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                              Trailers
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#trending-data12" class="nav-link" data-toggle="pill" role="tab" aria-selected="false">
+                              Review
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="trending-content">
+                        <div id="trending-data9" class="overview-tab tab-pane fade active show">
+                          <div class="trending-info align-items-center w-100 animated fadeInUp">
+                            <a href="javascript:void(0);" tabindex="0">
+                              <div class="res-logo">
+                                <div class="channel-logo">
+                                  <img src="images/logo1.png" class="c-logo" alt="">
+                                </div>
+                              </div>
+                            </a>
+                            <h1 class="trending-text big-title text-uppercase">Replicating Life: The Lung Phantom</h1>
+                            <div class="d-flex align-items-center text-white text-detail">
+                              <span class="badge badge-secondary p-3">0+</span>
+                              <span class="ml-3">3 Reports</span>
+                              <span class="trending-year">2023 - 2024</span>
+                            </div>
+                            <div class="d-flex align-items-center series mb-4">
+                              <a href="javascript:void(0);">
+                                <img src="images/trending/trending-label.png" class="img-fluid" alt="">
+                              </a>
+                              <span class="text-gold ml-3">#1 in Projects Today</span>
+                            </div>
+                            <p class="trending-dec">
+                              The journey of ingenious engineers at the London Regional Cancer Program as they craft a dynamic medical lung phantom, merging the realms of precise mechanics and software ingenuity to transform the landscape of radiotherapy and cancer treatment.
+                            </p>
+                            <div class="p-btns">
+                              <div class="d-flex align-items-center p-0">
+                                <a href="images/tumor.mp4" class="btn btn-hover mr-2" tabindex="0">
+                                  <i class="fa fa-play mr-2"></i>
+                                  Play Now
+                                </a>
+                                <a href="#" class="btn btn-link" tabindex="0">
+                                  <i class="fa fa-plus pr-2"></i>
+                                  My List 
+                                </a>
+                              </div>
+                            </div>
+                            <div class="trending-list mt-4">
+                              <div class="text-primary title">
+                                Starring : 
+                                <span class="text-body">
+                                  Minha Khan, Yiyi Zhang, Lauren Hooper, Susan Xu, Zein Barakat, Vishal Radhakrishnan
+                                </span>
+                              </div>
+                              <div class="text-primary title">
+                                Genres :
+                                <span class="text-body">
+                                  Bioengineering, Mechatronics, Software Development, Control Systems
+                                </span>
+                              </div>
+                              <div class="text-primary title">
+                                Directors:
+                                <span class="text-body">
+                                  Dr. Sherif Ramadan, Prof. Naomi Matsuura, PhD. Adam Pearson
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="trending-data10" class="overlay-tab tab-pane fade">
+                          <div class="trending-info align-items-center w-100 animated fadeInUp">
+                            <a href="#" tabindex="0">
+                              <div class="channel-logo">
+                                <img src="images/logo1.png" class="c-logo" alt="">
+                              </div>
+                            </a>
+                            <h1 class="trending-text big-title text-uppercase">Replicating Life: The Lung Phantom</h1>
+                            <div class="d-flex align-items-center text-white text-detail mb-4">
+                              <span class="season_date">
+                                5 Seasons 
+                              </span>
+                              <span class="trending-year">Feb 2019</span>
+                            </div>
+                            <div class="iq-custom-select d-inline-block sea-epi">
+                              <select name="Seasons" class="form-control season-select">
+                                <option value="Season1">Iteration Odyssey: The Development</option>
+                                <option value="Season2">Trial by Design: The Testing</option>
+                                <option value="Season3">Accuracy Ascendant: Performance Revelation</option>
+                                <option value="Season4">Benchmark Battles: Specification Evaluation</option>
+                                <option value="Season5">Next Horizon: The Future </option>
+                              </select>
+                            </div>
+
+                            <div class="episodes-contens mt-4">
+                              <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images\projectImages\projects\lungPhantom\img6.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Episode 1</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">Problem - Understanding lung phantom use</p>
+                                  </div>
+                                </div>
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images\projectImages\projects\lungPhantom\img4.png" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Episode 2</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">6DOF - Radiation safe 3D Tumor motion</p>
+                                  </div>
+                                </div>
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images\projectImages\projects\lungPhantom\img2.png" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Episode 3</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">Simulation - Doctors Desired Motion </p>
+                                  </div>
+                                </div>
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images\projectImages\projects\lungPhantom\img3.png" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Episode 4</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">Prototype - Lung motion in action </p>
+                                  </div>
+                                </div>
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images/projectImages/projects/lungPhantom/resized_img1.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Episode 5</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">Radiotherapy Plan - The design use</p>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div id="trending-data11" class="overlay-tab tab-pane fade">
+                          <div class="trending-info align-items-center w-100 animated fadeInUp">
+                            <a href="#" tabindex="0">
+                              <div class="channel-logo">
+                                <img src="images/logo1.png" class="c-logo" alt="">
+                              </div>
+                            </a>
+                            <h1 class="trending-text big-title text-uppercase">Replicating Life: The Lung Phantom</h1>
+                            <div class="episodes-contens mt-4">
+                              <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
+                                <div class="e-item">
+                                  <div class="block-image position-relative">
+                                    <a href="#">
+                                      <img src="images/projectImages/projects/lungPhantom/collage_new.jpg" class="img-fluid" alt="">
+                                    </a>
+                                    <div class="episode-play-info">
+                                      <div class="episode-play">
+                                        <a href="#" tabindex="0">
+                                          <i class="fa fa-play"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="episodes-description text-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                      <a href="#">Trailer 1</a>
+                                      <span class="text-primary">2.25m</span>
+                                    </div>
+                                    <p class="mb-0">Stewart, the lung phantom</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div id="trending-data12" class="overlay-tab tab-pane fade">
+                          <div class="trending-info align-items-center w-100 animated fadeInUp">
+                            <a href="javascript:void(0);" tabindex="0">
+                              <div class="res-logo">
+                                <div class="channel-logo">
+                                  <img src="images/logo1.png" class="c-logo" alt="">
+                                </div>
+                              </div>
+                            </a>
+                            <h1 class="trending-text big-title text-uppercase">Replicating Life: The Lung Phantom</h1>
+                            <p class="trending-dec">
+                              <h2>Overview:</h2>
+                              <ul>
+                                  <li>Spearheaded the design and development of a medical phantom for simulating 3D motion of tumors.</li>
+                                  <li>Engineered a dual Stewart platform solution for complex tumor dynamics simulation.</li>
+                                  <li>Led code development for motion control of six motors, integrating user-inputted data for simulations.</li>
+                                  <li>Ensured precise motion pattern execution to enhance radiotherapy planning.</li>
+                              </ul>
+
+                              <h2>Technical Development and Collaboration</h2>
+                              <ul>
+                                  <li>Developed and refined the control system, programmed Arduino and MATLAB code for 3D trajectory generation.</li>
+                                  <li>Engaged with the team for system adaptability across various simulation scenarios.</li>
+                              </ul>
+
+                              <h2>Project Execution and Impact:</h2>
+                              <ul>
+                                  <li>Leveraged expertise in mechanical engineering, software development, and project management, setting new standards in medical phantoms for radiotherapy.</li>
+                              </ul>
+
+                              <h2>Outcomes:</h2>
+                              <ul>
+                                  <li>The Radiotherapy Lung Phantom Design project serves as a testament to the potential of interdisciplinary collaboration and innovation in medical technology, significantly enhancing radiotherapy planning and potentially improving cancer treatment outcomes.</li>
+                              </ul>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- main content ends  -->
+
+
+  <footer class="iq-bg-dark">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row footer-standard">
+          <div class="col-lg-5">
+            <div class="widget text-left">
+              <div>
+                <ul class="menu p-0">
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Privacy-Policy</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Watch List</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="widget text-left">
+              <div class="textwidget">
+                <p><small>Thank you for visiting our capstone showcase. We are open to any questions!</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <h6 class="footer-link-title">
+              Follow Us:
+            </h6>
+            <ul class="info-share">
+              <li>
+                <a href="https://www.facebook.com/vishal.radhakrishnan.96/">
+                  <i>
+                  <fa class="fa fa-facebook"></fa>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/vishal-radhakrishnan-39bb0a1b1/">
+                  <i>
+                  <fa class="fa fa-linkedin"></fa>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vishal.1402/">
+                  <i>
+                  <fa class="fa fa-instagram"></fa>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="widget text-left">
+              <div class="textwidget">
+                <h6 class="footer-link-title">
+                  MechFlix App 
+                </h6>
+                <div class="d-flex align-items-center">
+                  <a href="#"><img src="images/footer/01.jpg" alt=""></a>
+                  <br>
+                  <a href="#" class="ml-3"><img src="images/footer/02.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- js files  -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+
+  <script src="main.js"></script>
+
+  <!-- scrollbar JS -->
+  <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+  
+</body>
+
+</html>
